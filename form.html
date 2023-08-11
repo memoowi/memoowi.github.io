@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="form/styles.css">
+        <link rel="icon" type="image/x-icon" href="form/form1.svg">
+        <title>
+            Tag Form Input Di HTML
+        </title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Form Input</h1>
+            <form class="form-block">
+                <div class="form-control">
+                    <label>Nama Lengkap :</label>
+                    <input 
+                    type="text" 
+                    name="name"
+                    class="form-input">
+                </div>
+                <div class="form-control">
+                    <label>Umur :</label>
+                    <input type="number" name="age" class="form-input">
+                </div>
+                <div class="form-control">
+                    <label>Email :</label>
+                    <input type="email" name="email" class="form-input">
+                </div>
+                <div class="form-control">
+                    <label>Password :</label>
+                    <input type="password" name="password" class="form-input">
+                </div>
+                <div class="form-control">
+                    <label>Tanggal Lahir :</label>
+                    <input type="date" name="date-birth" class="form-input">  
+                </div>
+                <div class="form-control">
+                    <label>Jam :</label>
+                    <input type="time" name="time" class="form-input">
+                </div>
+                <div class="form-control">
+                    <label>File :</label>
+                    <input type="file" name="file" class="form-input"> 
+                </div>
+                <div class="form-control">
+                    <label>Sex :</label>
+                    <select class="form-input">
+                        <option disabled selected value>--Select one:--</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <p>Blood Type :</p>  
+                    <label><input type="radio" name="blood" value="A">A</label>
+                    <label><input type="radio" name="blood" value="B">B</label>
+                    <label><input type="radio" name="blood" value="AB">AB</label>
+                </div>
+                <div class="form-control">
+                    <p>Hobby</p>
+                    <label><input type="checkbox" name="hobby1" value="eat" class="input-checkbox">Eat</label>
+                    <label><input type="checkbox" name="hobby2" value="sleep" class="input-checkbox">Sleep</label>
+                    <label><input type="checkbox" name="hobby3" value="game" class="input-checkbox">Gaming</label>
+                    <label><input type="checkbox" name="hobby4" value="anime" class="input-checkbox">Watch Anime</label>
+                    <label><input type="checkbox" name="hobby5" value="read" class="input-checkbox">Reading</label>
+                    <label><input type="checkbox" name="hobby6" value="draw" class="input-checkbox">Drawing</label>
+                </div>
+                <div class="form-control">
+                    <label>favorite color</label>
+                    <input type="color" name="color">
+                </div>
+                <div class="form-control">
+                    <label>How Greget are you?</label>
+                    <input type="range" name="greget" class="form-input" min="0" max="100">
+                </div>
+                <div class="form-control">
+                    <label>Telepon <span class="clue">(format : 08xx-xxxx-xxxx )</span></label>
+                    <input type="tel" name="telp" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" class="form-input">
+                </div>
+                <div class="form-control">
+                    <input type="button" onclick="showAlert('MiMu');" value="Show Me">
+                    <button type="submit">Simpan Data</button>
+                    <button type="reset">Hapus Form</button>
+                </div>
+            </form>
+        </div>
+    </body>
+    <script type="text/javascript">
+        function showAlert(name) {
+                return alert("Hello " + name)
+        }
+    </script>
+</html>
