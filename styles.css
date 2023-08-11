@@ -74,7 +74,7 @@ tr:hover {
 .left {
     text-align: left;
 }
-#love-button {
+#login-button {
     display: block;
     width: 100%;
     padding: 10px;
@@ -85,12 +85,12 @@ tr:hover {
     margin: 30px auto;
     transition-duration: 0.5s;
 }
-#love-button:hover {
+#login-button:hover {
     background-color: rgb(245, 185, 185);
     color: black;
     box-shadow: 0 0 10px 6px rgb(100, 39, 28);
 }
-#love-button:active {
+#login-button:active {
     background-color: white;
     color:blue;
     font-weight: bolder;
