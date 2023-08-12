@@ -6,12 +6,12 @@
         <link rel="stylesheet" href="form/styles.css">
         <link rel="icon" type="image/x-icon" href="form/form1.svg">
         <title>
-            Tag Form Input Di HTML
+            Form Input
         </title>
     </head>
     <body>
         <div class="container">
-            <h1>Form Input</h1>
+            <h1>FORM INPUT</h1>
             <form class="form-block">
                 <div class="form-control">
                     <label>Nama Lengkap :</label>
@@ -45,21 +45,21 @@
                     <input type="file" name="file" class="form-input"> 
                 </div>
                 <div class="form-control">
-                    <label>Sex :</label>
+                    <label>Jenis Kelamin :</label>
                     <select class="form-input">
                         <option disabled selected value>--Select one:--</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
+                        <option value="male">Pria</option>
+                        <option value="female">Wanita</option>
                     </select>
                 </div>
                 <div class="form-control">
-                    <p>Blood Type :</p>  
-                    <label><input type="radio" name="blood" value="A">A</label>
-                    <label><input type="radio" name="blood" value="B">B</label>
-                    <label><input type="radio" name="blood" value="AB">AB</label>
+                    <p>Golongan Darah :</p>  
+                    <label class="radio"><input type="radio" name="blood" value="A">A</label>
+                    <label class="radio"><input type="radio" name="blood" value="B">B</label>
+                    <label class="radio"><input type="radio" name="blood" value="AB">AB</label>
                 </div>
                 <div class="form-control">
-                    <p>Hobby</p>
+                    <p>Hobi :</p>
                     <label><input type="checkbox" name="hobby1" value="eat" class="input-checkbox">Eat</label>
                     <label><input type="checkbox" name="hobby2" value="sleep" class="input-checkbox">Sleep</label>
                     <label><input type="checkbox" name="hobby3" value="game" class="input-checkbox">Gaming</label>
@@ -68,21 +68,29 @@
                     <label><input type="checkbox" name="hobby6" value="draw" class="input-checkbox">Drawing</label>
                 </div>
                 <div class="form-control">
-                    <label>favorite color</label>
-                    <input type="color" name="color">
+                    <label>Warna Favorit :</label>
+                    <input type="color" name="color" class="input-color">
                 </div>
                 <div class="form-control">
-                    <label>How Greget are you?</label>
-                    <input type="range" name="greget" class="form-input" min="0" max="100">
+                    <label>Seberapa Greget Anda ?</label>
+                    <input type="range" name="greget" class="form-input" min="0" max="100" value="0">
                 </div>
                 <div class="form-control">
                     <label>Telepon <span class="clue">(format : 08xx-xxxx-xxxx )</span></label>
-                    <input type="tel" name="telp" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" class="form-input">
+                    <input 
+                        type="tel" 
+                        name="telp" 
+                        class="form-input" 
+                        pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" 
+                        class="form-input" 
+                        required
+                    />
                 </div>
-                <div class="form-control">
-                    <input type="button" onclick="showAlert('MiMu');" value="Show Me">
-                    <button type="submit">Simpan Data</button>
-                    <button type="reset">Hapus Form</button>
+                <hr>
+                <div class="form-control button">
+                    <input class="button" type="button" onclick="showAlert('MiMu');" value="Show Me">
+                    <button class="button" type="submit">Simpan Data</button>
+                    <button class="button" type="reset">Hapus Form</button>
                 </div>
             </form>
         </div>
