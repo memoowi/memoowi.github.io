@@ -90,19 +90,39 @@ tr:hover {
     border-radius: 5px;
     border: 0;
     cursor: pointer;
-    background: rgb(207, 181, 143);
+    background: rgb(209, 183, 166);
     margin: 30px auto;
     transition-duration: 0.5s;
     font-weight: 600;
     font-size: 1.2rem;
+    color: #ffffff;
 }
 #login-button:hover {
-    background-color: rgb(245, 185, 185);
-    color: black;
-    box-shadow: 0 0 10px 6px rgb(100, 39, 28);
+    background-color: #e5989b;
+    box-shadow: 0 0 10px 6px #ffcdb2;
+    transform: scale(1.025);
 }
-#login-button:active {
+#login-button:active, #form-button:active {
     background-color: white;
     color:blue;
     font-weight: bolder;
+}
+#form-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    background: rgb(173, 173, 192);
+    margin: 30px auto;
+    transition-duration: 0.5s;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: white;
+}
+#form-button:hover {
+    background-color: #108488;
+    box-shadow: 0 0 10px 6px #d4f1ff;
+    transform: scale(1.025);
 }
